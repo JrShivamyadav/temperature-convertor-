@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane fx:id="rootGridPane" minHeight="-Infinity" prefHeight="500.0" prefWidth="750.0" style="-fx-background-color: #D9F7F0;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+
+    <columnConstraints>
+    <ColumnConstraints />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="533.2000427246094" minWidth="10.0" prefWidth="525.2000427246094" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="303.20001220703125" minWidth="10.0" prefWidth="224.79995727539062" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="195.60001220703126" minHeight="0.0" prefHeight="33.20000610351562" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="466.3999938964844" minHeight="10.0" prefHeight="466.3999938964844" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Pane prefHeight="2.0" prefWidth="600.0" GridPane.columnIndex="1" GridPane.columnSpan="2" />
+      <Pane fx:id="insertedDiscPane" prefHeight="467.0" prefWidth="503.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <VBox style="-fx-background-color: #2B3B4C;" GridPane.columnIndex="2" GridPane.rowIndex="1">
+         <children>
+            <Region prefHeight="158.0" prefWidth="235.0" VBox.vgrow="ALWAYS" />
+            <Label fx:id="playerNameLabel" alignment="CENTER" prefHeight="43.0" prefWidth="301.0" text="Player One" textFill="#fcf4f4">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+            </Label>
+            <Label alignment="BOTTOM_CENTER" prefHeight="38.0" prefWidth="308.0" text="Turn" textFill="#f4e9e9">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <Region prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+         </children>
+      </VBox>
+   </children>
+</GridPane>
